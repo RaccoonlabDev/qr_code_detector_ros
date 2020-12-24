@@ -2,7 +2,7 @@
 The Ros package to get QR code data and position in world.
 Written on Python Opencv + zbar + PnP + blur detector.
 
-![IMAGE ALT TEXT](https://habrastorage.org/getpro/habr/upload_files/1d6/c10/759/1d6c107598726b0e59e1aa175a7c58c8)
+![IMAGE ALT TEXT](https://i.ibb.co/W63Syxc/z5ol4-MEgbh8.jpg)
 
 ## Install
 Need install lib: http://zbar.sourceforge.net/
