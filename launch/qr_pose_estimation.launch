@@ -1,0 +1,20 @@
+<launch>
+	<!-- start  marker_server_node -->
+	<node pkg="qr_code_detector_ros" name="qr_pose_estimation_node" type="qr_pose_estimation.py" output="screen" respawn="true">
+		<param name="camera_name" value="/camera" />
+
+		<!--the width of the image in meters-->
+		<param name="size_image" value="0.25" />
+		<param name="show_image" value="false" />
+		<param name="blur_threshold" value="1" />
+		<param name="frame_id" value="qr_" />
+		<param name="map_id" value="map" />
+		<param name="max_dist" value="6" />s
+		<param name="is_vertical" value="true" />
+
+		<param name="rate" value="15" />
+		<remap from="find_qr" to="/qr_code/gate"/>
+		<remap from="qr_code/image" to="qr_code/gate/image"/>
+
+	</node>
+</launch>
